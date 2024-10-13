@@ -733,9 +733,9 @@ function Ft(e) {
             n = m("video"),
             r = m("source"),
             s = m("source"),
-            r.src !== (o = "/assets/videos/channel-" + e[4].displayName + ".webm") && y(r, "src", o),
+            r.src !== (o = "/videos/channel-" + e[4].displayName + ".webm") && y(r, "src", o),
             y(r, "type", "video/webm"),
-            s.src !== (i = "/assets/videos/channel-" + e[4].displayName + ".mp4") && y(s, "src", i),
+            s.src !== (i = "/videos/channel-" + e[4].displayName + ".mp4") && y(s, "src", i),
             y(s, "type", "video/mp4"),
             y(n, "class", "tv-video"),
             y(n, "channel", l = e[4].number),
@@ -754,8 +754,8 @@ function Ft(e) {
             a = !0)
         },
         p(t, [e]) {
-            16 & e && r.src !== (o = "/assets/videos/channel-" + t[4].displayName + ".webm") && y(r, "src", o),
-            16 & e && s.src !== (i = "/assets/videos/channel-" + t[4].displayName + ".mp4") && y(s, "src", i),
+            16 & e && r.src !== (o = "/videos/channel-" + t[4].displayName + ".webm") && y(r, "src", o),
+            16 & e && s.src !== (i = "/videos/channel-" + t[4].displayName + ".mp4") && y(s, "src", i),
             16 & e && l !== (l = t[4].number) && y(n, "channel", l),
             32 & e && !isNaN(t[5]) && (n.volume = t[5]),
             10 & e && b(n, "visually-hidden", !t[1] || t[3] === ct)
@@ -1474,7 +1474,7 @@ function ye() {
     t.external ? window.open(t.url, "_blank") : ve(t.url)
 }
 function $e() {
-    fetch("/assets/pages.json").then((t=>t.json())).then((t=>{
+    fetch("/pages.json").then((t=>t.json())).then((t=>{
         le = t
     }
     )).catch((()=>{
